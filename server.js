@@ -17,6 +17,8 @@ rl = readline.createInterface({
 
 // Globals
 PORT = 3000
+PORT = process.env.PORT || 3000;
+
 app = express()
 static_dir = 'public'
 default_score = 60000
@@ -66,7 +68,7 @@ new_prog_delim = "New_Progresses_Instance:"
 
 server = http.createServer(app);
 io = require('socket.io').listen(server);
-server.listen(PORT, () => {
+server.listen(PORT, "0.0.0.0", () => {
 	// print('Server started')
 
 	progresses = extract_progresses(progresses_file_name)
