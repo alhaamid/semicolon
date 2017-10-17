@@ -66,7 +66,7 @@ new_prog_delim = "New_Progresses_Instance:"
 
 server = http.createServer(app);
 io = require('socket.io').listen(server);
-server.listen(PORT, "0.0.0.0", () => {
+server.listen(PORT, () => {
 	// print('Server started')
 
 	progresses = extract_progresses(progresses_file_name)
