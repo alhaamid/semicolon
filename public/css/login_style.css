@@ -1,0 +1,24 @@
+h1 {
+	text-align: center
+}
+h6 {
+	text-align: center;
+	color: #cc0000;
+	font-size:16px;
+}
+body {
+	font-family: "Candara", Verdana, "Arial Black"; 
+	font-size: 20px; 
+	/*background-image: url("/images/smiley.png");*/
+	background-color: #81A4CD;
+}
+input {
+	font-family: "Candara", Verdana, "Arial Black"; 
+	font-size: 20px
+}
+button { 
+	font-family: "Candara", Verdana, "Arial Black"; 
+	font-size: 25px; 
+	background-color: lightgreen; 
+	align: center
+}

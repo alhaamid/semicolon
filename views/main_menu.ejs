@@ -1,0 +1,125 @@
+<head>
+	<style type="text/css">
+		h1 {
+			text-align: center
+		}
+		h6 {
+			text-align: center;
+			color: #cc0000;
+		}
+		body {
+			font-family: "Candara", Verdana, "Arial Black"; 
+			font-size: 20px; 
+			background-color: #81A4CD;
+			padding-left: 180px; 
+			padding-right: 180px; 
+			padding-top: 20px; 
+			padding-bottom: 90px
+		}
+		button { 
+			font-family: "Candara", Verdana, "Arial Black"; 
+			font-size: 16px; 
+			background-color: lightgreen;
+			/*background-color: skyblue;*/
+			align: center; 
+			width: 60%;
+		}
+		.tg {
+			border-collapse:collapse;
+			border-spacing:0;
+			border-color:#999;
+			table-layout: fixed;
+			width: 85%;
+		}
+
+		.tg td {
+			font-family: "Candara", Verdana, "Arial Black";
+			font-size:16px;
+			padding:10px 5px;
+			border-style:solid;
+			border-width:0px;
+			overflow:hidden;
+			word-break:normal;
+			border-color:#999;
+			color:#444;
+			background-color:#F7FDFA;
+			border-top-width:1px;
+			border-bottom-width:1px;
+		}
+		.tg th {
+			font-family: "Candara", Verdana, "Arial Black";
+			font-size:16px;
+			font-weight:normal;
+			padding:10px 5px;
+			border-style:solid;
+			border-width:0px;
+			overflow:hidden;
+			word-break:normal;
+			border-color:#999;
+			color:#fff;
+			background-color:#054A91;
+			border-top-width:1px;
+			border-bottom-width:1px;}
+		.tg .tg-mid {
+			text-align:center; 
+			vertical-align:center;
+		}
+	</style>
+	<!-- <link rel="stylesheet" href="/css/main_menu_style.css" media="screen"> -->
+</head>
+
+<body>
+	<h1>S E M ; C O L O N</h1>
+	<h2 id="name" align="center"></h2>
+	<h6 id="server_says"></h6>
+
+	<div style="text-align:center">
+		<h3 id="instructions" align="center">Instructions:<br> </h3>
+		<div style="display: inline-block; text-align: left">
+			
+			<li> <b>Any group member found copying code from another group or seeking help of any sort will be disqualified immediately </b> </li>
+
+			<li> You can only compete with a group of 2 members. </li>
+
+			<li> You will be asked to hand over your mobile phones / laptops for the entire duration of the programming competition. </li>
+
+			<li> Please adhere to the strict format of reading input files and displaying the output. If you mistype even a single character, the autograder will mark you incorrect. So test your code thoroughly before submitting. One way of testing your code before submitting is to make an input file yourself and test your code with it to check whether your code displays the desired output or not </li>
+
+			<li> The time for a question starts immediately when you open a question. You will be scored according to the time taken for each question. </li>
+
+			<li> Whatever code you submit, it should execute within <b>1</b> minute after it is run. If it takes longer, your question WILL be marked incorrect. </li>
+
+			<li> You can submit <b>Java(.java)</b>, <b>C++(.cpp)</b> and <b>Python(.py)</b> files. All three programming languages are allowed for this competition </li>
+
+			<li> For Java, only version <b>1.8.0_121</b> is supported. Your code for Java will be checked with the following command: <b>javac &#60yourfile.java&#62 && java &#60yourfile&#62 </b> </li>
+
+			<li> For C++, only version <b>5.4.0</b> of <b>gcc</b> will be supported. Your code for C++ will be checked with the following command: <b>g++ &#60yourfile.cpp&#62 -o a.out && ./a.out </b> </li>
+
+			<li> For Python, only version <b>2.7.12</b> is supported. Your code for Python will be checked with the following commad: <b>python &#60yourfile.py&#62</b> </li>
+		</div>
+	</div>
+
+	<br><br>
+
+	<div style="text-align:center">
+		<table class="tg" align="center">
+			<col width="20%">
+			<col width="60%">
+			<col width="20%">
+			<tr>
+				<th class="tg-mid">Question #</th>
+				<th class="tg-mid">Status</th>
+				<th class="tg-mid">Go</th>
+			</tr>
+			<% for (i=1; i<=4; i++) { %>
+				<tr>
+					<td class="tg-mid">Question <%=i%></td>
+					<td class="tg-mid" id="q<%=i%>_status">Haven't started yet</td>
+					<td class="tg-mid"><button id="q<%=i%>_go_to"><b>Open Question</b></button> </td>
+
+				</tr>
+			<%}%>
+		</table>
+		<br><br>
+	</div>
+</body>

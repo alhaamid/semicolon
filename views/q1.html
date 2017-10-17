@@ -1,0 +1,184 @@
+<!doctype html>
+
+<head>
+	<style type="text/css">
+		h1 {
+			text-align: center
+		}
+		h6 {
+			text-align: center;
+			color: #cc0000;
+			font-size:16px;
+		}
+		body {
+			font-family: "Candara", Verdana, "Arial Black"; 
+			font-size: 20px; 
+			background-color: #81A4CD;
+			padding-left: 40px; 
+			padding-right: 20px; 
+			padding-top: 20px; 
+			padding-bottom: 90px
+		}
+		button { 
+			font-family: "Candara", Verdana, "Arial Black"; 
+			font-size: 24px; 
+			background-color: lightgreen;
+			/*background-color: #6bf178; */
+			align: center
+		}
+		p {
+			font-family: "Candara", Verdana, "Arial Black"; 
+			font-size: 19px; 
+			text-align: left;
+			margin: 30px;
+		}
+		li {
+			text-align: left;
+			margin-left: 60px;
+		}
+		input {
+			font-family: "Candara", Verdana, "Arial Black"; 
+			font-size: 20px;
+			width: 550px;
+		}
+		.tg {
+			border-collapse:collapse;
+			border-spacing:0;
+			border-color:#999;
+			table-layout: fixed;
+			width: 100%;
+		}
+
+		.tg td {
+			font-family:"Candara", Verdana, "Arial Black"; 
+			font-size:16px;
+			padding:10px 5px;
+			border-top-width:1px;
+			border-right-width:2px;
+			border-left-width: 0px;
+			border-bottom-width: 0px;
+			border-style:solid;
+			background-color:#F7FDFA;
+			border-color:#999;
+			overflow:hidden;
+			word-break:normal;
+			color:#444;
+		}
+
+		.tg .tg-t_ldr {
+			font-family:"Candara", Verdana, "Arial Black";
+			text-align:center;
+			color: #cc0000;
+			font-size:20px;
+			padding:10px 5px;
+			border-right-width: 0px;
+			border-style:solid;
+			background-color:#F7FDFA;
+			border-color:#999;
+			overflow:hidden;
+			word-break:normal;
+			vertical-align: top;
+		}
+
+		.tg th{
+			font-family:"Candara", Verdana, "Arial Black"; 
+			font-size:16px; 
+			font-weight:normal;
+			padding:10px 5px;
+			border-width:0px; 
+			border-style:solid; 
+			border-color:#999;
+			border-top-width:1px; 
+			border-bottom-width:1px;
+			overflow:hidden; 
+			word-break:normal;
+			color:#fff; 
+			background-color:#054A91;
+		}
+
+		.tg .tg-t_qst{
+			font-family:"Candara", Verdana, "Arial Black";
+			font-size:18px;
+			text-align:center; 
+			vertical-align:center;
+		}
+
+		.tg .tg-left{
+			text-align:left; 
+			vertical-align:center;
+		}
+	</style>
+	<!-- <link rel="stylesheet" href="/css/questions_style.css" media="screen"> -->
+</head>
+
+<body>
+	<h1>S E M ; C O L O N</h1>
+
+	<div style="text-align:center">
+		<h6 id="server_says"></h6>
+		<button id="back"><b>Back to Main Menu</b></button>
+	</div>
+
+	<br><br><br>
+
+	<div style="text-align:center">
+		<table class="tg" align="center">
+			<col width="70%">
+			<col width="30%">
+
+			<tr>
+				<th class="tg-t_qst"> <b>PROBLEM STATEMENT</b></th>
+				<th class="tg-t_qst"> <b>LEADERBOARD</b></th>
+			</tr>
+
+			<tr>
+				<td class="tg-t_qst">
+					<p>
+						Rabbiya is a great individual but is also always thinking of ways to annoy her friends. So she invites <b>n</b> of her friends (numbered 1, 2, ... n) with Obsessive-Compulsive Disorder to her home to play LUDO. Each friend should belong to exactly one group, and each group must have at least one friend in it.
+					</p><p>
+						Each friend <b>i</b> is willing to participate only if the group the friend belongs to has exactly <b>T[i]</b> friends in it. Rabbiya wants to make sure that everyone participates, but she is unsure if that is possible. Help Rabbiya in her evil plan and figure out if there is a way to assign friends to groups such that everyone is happy with the size of their group. If it is possible, display the number of groups needed.If it is impossible, display -1. 
+					</p><p>
+						<b>Input:</b> You will read only one file named: <b>"q1.in"</b>. You should assume that this file is in the same directory as your code for this question. The format for the file is as follows:
+
+						<li>The first line will contain one number <b>n</b> which is the number of test cases </li>
+						<li><b>n</b> lines follow</li>
+						<li>Each of the next <b>n</b> lines will contain a unique <b>T</b>. Thus, each of the next <b>n</b> lines will contain an array of numbers which will be comma (<b>,</b>) separated </li>
+					</p><p>
+						<b>Output:</b> For each of the <b>n T's</b>, you need to display one and only one number. Each of these numbers should be on a new line. So in short, your output should contain <b>n</b> numbers with each number number separated by a <b>newline(\n)</b> character.
+					</p><p>
+						<b>Constraints:</b> 
+						<li> <b>T</b> will contain between 1 and 500 elements, inclusive </li>
+						<li> Each element in <b>T</b> will be between 1 and 500, inclusive </li>
+					</p><p>
+						<b>Sample Input:</b> <br>
+							4<br>
+							1,2<br>
+							2,2<br>
+							3,3,2,2,2<br>
+							2,3,2,3,2,3,2,1,1,2,2<br>
+					</p><p>
+						<b>Sample Output:</b> <br>
+							-1<br>
+							1<br>
+							-1<br>
+							6<br>
+					</p>					
+
+					<br><br><br>
+					<h2>Submit your code</h2>
+					<!-- <textarea style="align: center" id='q1_code' cols=100% rows=30% placeholder='Enter your code for this question here'></textarea>
+					<br><br>
+					Filename: <input type="text" id="q1_file_name" placeholder="Enter the file's name with which it should be compiled and run" title="Enter the file's name with which it should be compiled and run">
+					<br> -->
+					<input id="q1_file" type="file" name="q1_file" style="width: 30%"/> <br>
+					<h6 id="error_msg"></h6>
+					<button id="q1_upload"><b>Upload</b></button>
+					<br><br>
+				</td>
+
+				<td class="tg-t_ldr" id="leader_board">
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>

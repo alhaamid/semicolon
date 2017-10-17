@@ -1,0 +1,190 @@
+<!doctype html>
+
+<head>
+	<style type="text/css">
+		h1 {
+			text-align: center
+		}
+		h6 {
+			text-align: center;
+			color: #cc0000;
+			font-size:16px;
+		}
+		body {
+			font-family: "Candara", Verdana, "Arial Black"; 
+			font-size: 20px; 
+			background-color: #81A4CD;
+			padding-left: 40px; 
+			padding-right: 20px; 
+			padding-top: 20px; 
+			padding-bottom: 90px
+		}
+		button { 
+			font-family: "Candara", Verdana, "Arial Black"; 
+			font-size: 24px; 
+			background-color: lightgreen;
+			/*background-color: #6bf178;*/
+			align: center
+		}
+		p {
+			font-family: "Candara", Verdana, "Arial Black"; 
+			font-size: 19px; 
+			text-align: left;
+			margin: 30px;
+		}
+		li {
+			text-align: left;
+			margin-left: 60px;
+		}
+		input {
+			font-family: "Candara", Verdana, "Arial Black"; 
+			font-size: 20px;
+			width: 550px;
+		}
+		.tg {
+			border-collapse:collapse;
+			border-spacing:0;
+			border-color:#999;
+			table-layout: fixed;
+			width: 100%;
+		}
+
+		.tg td {
+			font-family:"Candara", Verdana, "Arial Black"; 
+			font-size:16px;
+			padding:10px 5px;
+			border-top-width:1px;
+			border-right-width:2px;
+			border-left-width: 0px;
+			border-bottom-width: 0px;
+			border-style:solid;
+			background-color:#F7FDFA;
+			border-color:#999;
+			overflow:hidden;
+			word-break:normal;
+			color:#444;
+		}
+
+		.tg .tg-t_ldr {
+			font-family:"Candara", Verdana, "Arial Black";
+			text-align:center;
+			color: #cc0000;
+			font-size:20px;
+			padding:10px 5px;
+			border-right-width: 0px;
+			border-style:solid;
+			background-color:#F7FDFA;
+			border-color:#999;
+			overflow:hidden;
+			word-break:normal;
+			vertical-align: top;
+		}
+
+		.tg th{
+			font-family:"Candara", Verdana, "Arial Black"; 
+			font-size:16px; 
+			font-weight:normal;
+			padding:10px 5px;
+			border-width:0px; 
+			border-style:solid; 
+			border-color:#999;
+			border-top-width:1px; 
+			border-bottom-width:1px;
+			overflow:hidden; 
+			word-break:normal;
+			color:#fff; 
+			background-color:#054A91;
+		}
+
+		.tg .tg-t_qst{
+			font-family:"Candara", Verdana, "Arial Black";
+			font-size:18px;
+			text-align:center; 
+			vertical-align:center;
+		}
+
+		.tg .tg-left{
+			text-align:left; 
+			vertical-align:center;
+		}
+	</style>
+	<!-- <link rel="stylesheet" href="/css/questions_style.css" media="screen"> -->
+</head>
+
+<body>
+	<h1>S E M ; C O L O N</h1>
+
+	<div style="text-align:center">
+		<h6 id="server_says"></h6>
+		<button id="back"><b>Back to Main Menu</b></button>
+	</div>
+
+	<br><br><br>
+
+	<div style="text-align:center">
+		<table class="tg" align="center">
+			<col width="70%">
+			<col width="30%">
+
+			<tr>
+				<th class="tg-t_qst"> <b>PROBLEM STATEMENT</b></th>
+				<th class="tg-t_qst"> <b>LEADERBOARD</b></th>
+			</tr>
+
+			<tr>
+				<td class="tg-t_qst">
+					<p>
+						The Snapper is a clever little device that, on one side, plugs its input plug into an output socket, and, on the other side, exposes an output socket for plugging in a light or other device.
+					</p><p>
+						When a Snapper is in the ON state and is receiving power from its input plug, then the device connected to its output socket is receiving power as well. When you snap your fingers -- making a clicking sound -- any Snapper receiving power at the time of the snap toggles between the ON and OFF states.
+					</p><p>
+						In hopes of destroying the universe by means of a singularity, I have purchased <b>N</b> Snapper devices and chained them together by plugging the first one into a power socket, the second one into the first one, and so on. The light is plugged into the <b>N</b>th Snapper.
+					</p><p>
+						Initially, all the Snappers are in the OFF state, so only the first one is receiving power from the socket, and the light is off. I snap my fingers once, which toggles the first Snapper into the ON state and gives power to the second one. I snap my fingers again, which toggles both Snappers and then promptly cuts power off from the second one, leaving it in the ON state, but with no power. I snap my fingers the third time, which toggles the first Snapper again and gives power to the second one. Now both Snappers are in the ON state, and if my light is plugged into the second Snapper it will be on.
+					</p><p>
+						I keep doing this for hours. Will the light be on or off after I have snapped my fingers <b>K</b> times? The light is on if and only if it's receiving power from the Snapper it's plugged into. 
+					</p><p>
+						<b>Input:</b> You will read only one file named: <b>"q4.in"</b>. You should assume that this file is in the same directory as your code for this question. The format for the file is as follows:
+
+						The first line of the input gives the number of test cases, <b>T</b>. <b>T</b> lines follow. Each one contains two integers, <b>N</b> and <b>K</b>. These two integers will be comma separated. 
+					</p><p>
+						<b>Output:</b>
+						For each test case, output one line containing either "ON" or "OFF", indicating the state of the light bulb.
+					</p><p>
+						<b>Constraints:</b> 
+						1 ≤ T ≤ 10000
+						1 ≤ N ≤ 30
+						0 ≤ K ≤ 10^8
+					</p><p>
+						<b>Sample Input:</b> <br>
+						4<br>
+						1,0<br>
+						1,1<br>
+						4,0<br>
+						4,47<br>
+					</p><p>
+						<b>Sample Output:</b> <br>
+						OFF<br>
+						ON<br>
+						OFF<br>
+						ON<br>
+					</p>
+
+					<br><br><br><br><br>
+					<h2>Submit your code</h2>
+					<!-- <textarea style="align: center" id='q4_code' cols=100% rows=30% placeholder='Enter your code for this question here'></textarea>
+					<br><br>
+					Filename: <input type="text" id="q4_file_name" placeholder="Enter the file's name with which it should be compiled and run" title="Enter the file's name with which it should be compiled and run">
+					<br> -->
+					<input id="q4_file" type="file" name="q4_file" style="width: 30%"/> <br>
+					<h6 id="error_msg"></h6>
+					<button id="q4_upload"><b>Upload</b></button>
+					<br><br>
+				</td>
+
+				<td class="tg-t_ldr" id="leader_board">
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>

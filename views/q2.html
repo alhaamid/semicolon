@@ -1,0 +1,191 @@
+<!doctype html>
+
+<head>
+	<style type="text/css">
+		h1 {
+			text-align: center
+		}
+		h6 {
+			text-align: center;
+			color: #cc0000;
+			font-size:16px;
+		}
+		body {
+			font-family: "Candara", Verdana, "Arial Black"; 
+			font-size: 20px; 
+			background-color: #81A4CD;
+			padding-left: 40px; 
+			padding-right: 20px; 
+			padding-top: 20px; 
+			padding-bottom: 90px
+		}
+		button { 
+			font-family: "Candara", Verdana, "Arial Black"; 
+			font-size: 24px; 
+			background-color: lightgreen;
+			/*background-color: #6bf178;*/
+			align: center
+		}
+		p {
+			font-family: "Candara", Verdana, "Arial Black"; 
+			font-size: 19px; 
+			text-align: left;
+			margin: 30px;
+		}
+		li {
+			text-align: left;
+			margin-left: 60px;
+		}
+		input {
+			font-family: "Candara", Verdana, "Arial Black"; 
+			font-size: 20px;
+			width: 550px;
+		}
+		.tg {
+			border-collapse:collapse;
+			border-spacing:0;
+			border-color:#999;
+			table-layout: fixed;
+			width: 100%;
+		}
+
+		.tg td {
+			font-family:"Candara", Verdana, "Arial Black"; 
+			font-size:16px;
+			padding:10px 5px;
+			border-top-width:1px;
+			border-right-width:2px;
+			border-left-width: 0px;
+			border-bottom-width: 0px;
+			border-style:solid;
+			background-color:#F7FDFA;
+			border-color:#999;
+			overflow:hidden;
+			word-break:normal;
+			color:#444;
+		}
+
+		.tg .tg-t_ldr {
+			font-family:"Candara", Verdana, "Arial Black";
+			text-align:center;
+			color: #cc0000;
+			font-size:20px;
+			padding:10px 5px;
+			border-right-width: 0px;
+			border-style:solid;
+			background-color:#F7FDFA;
+			border-color:#999;
+			overflow:hidden;
+			word-break:normal;
+			vertical-align: top;
+		}
+
+		.tg th{
+			font-family:"Candara", Verdana, "Arial Black"; 
+			font-size:16px; 
+			font-weight:normal;
+			padding:10px 5px;
+			border-width:0px; 
+			border-style:solid; 
+			border-color:#999;
+			border-top-width:1px; 
+			border-bottom-width:1px;
+			overflow:hidden; 
+			word-break:normal;
+			color:#fff; 
+			background-color:#054A91;
+		}
+
+		.tg .tg-t_qst{
+			font-family:"Candara", Verdana, "Arial Black";
+			font-size:18px;
+			text-align:center; 
+			vertical-align:center;
+		}
+
+		.tg .tg-left{
+			text-align:left; 
+			vertical-align:center;
+		}
+	</style>
+	<!-- <link rel="stylesheet" href="/css/questions_style.css" media="screen"> -->
+</head>
+
+<body>
+	<h1>S E M ; C O L O N</h1>
+
+	<div style="text-align:center">
+		<h6 id="server_says"></h6>
+		<button id="back"><b>Back to Main Menu</b></button>
+	</div>
+
+	<br><br><br>
+
+	<div style="text-align:center">
+		<table class="tg" align="center">
+			<col width="70%">
+			<col width="30%">
+
+			<tr>
+				<th class="tg-t_qst"> <b>PROBLEM STATEMENT</b></th>
+				<th class="tg-t_qst"> <b>LEADERBOARD</b></th>
+			</tr>
+
+			<tr>
+				<td class="tg-t_qst">
+					<p>
+						You are playing a ridiculous game called NameDoesn'tMatter Game. This game uses a deck of <b>N</b> cards. Each card has a single digit written on it. These digits are given as characters in the String <b>digits</b>. More precisely, the i-th character of <b>digits</b> is the digit written on the i-th card from the top of the deck (both indices are 0-based). 
+					</p><p>
+						The game is played as follows. First, you place the topmost card (whose digit is the 0-th character of <b>digits</b>) on the table. Then, you pick the cards one-by-one from the top of the deck. For each card, you have to place it either to the left or to the right of all cards that are already on the table.
+					</p><p>
+						After all of the cards have been placed on the table, they now form an N-digit number. You are given a String <b>lowerBound</b> that represents an N-digit number. The primary goal of the game is to arrange the cards in such a way that the number <b>X</b> shown on the cards will be greater than or equal to <b>lowerBound</b>. If there are multiple ways to satisfy the primary goal, you want to make the number <b>X</b> as small as possible. 
+					</p><p>
+						Display the smallest possible value of <b>X</b> you can achieve, as a string containing N digits. If it is impossible to achieve a number which is greater than or equal to <b>lowerBound</b>, display <b>-1</b> instead.
+					</p><p>
+						<b>Input:</b> You will read only one file named: <b>"q2.in"</b>. You should assume that this file is in the same directory as your code for this question. The format for the file is as follows:
+
+						<li>The first line will contain one number <b>n</b> which is the number of test cases </li>
+						<li><b>n</b> lines follow</li>
+						<li>Each of the next <b>n</b> lines will contain two comma separated numbers. The first number in each line will be <b>digits</b> and the second number in each line will be <b>lowerBound</b> </li>
+					</p><p>
+						<b>Output:</b> For each of the <b>n</b> test cases, you need to display one and only one number: <b>X</b> or <b>-1</b>. Each of these numbers should be on a new line. So in short, your output should contain <b>n</b> numbers with each number number separated by a <b>newline(\n)</b> character.
+					</p><p>
+						<b>Constraints:</b> 
+						<li><b>digits</b> will contain between 1 and 25 characters, inclusive</li>
+						<li>Each character of <b>digits</b> will be between '0' and '9', inclusive</li>
+						<li><b>lowerBound</b> will contain the same number of characters as <b>digits</b></li>
+						<li>Each character of <b>lowerBound</b> will be between '0' and '9', inclusive</li>
+						<li>The first character of <b>lowerBound</b> will not be '0'</li>
+					</p><p>
+						<b>Sample Input:</b> <br>
+						4<br>
+						565,556<br>
+						565,566<br>
+						565,656<br>
+						8016352,1000000<br>
+					</p><p>
+						<b>Sample Output:</b> <br>
+						556<br>
+						655<br>
+						-1<br>
+						1086352<br>
+					</p>
+
+					<br><br><br><br><br>
+					<h2>Submit your code</h2>
+					<!-- <textarea style="align: center" id='q2_code' cols=100% rows=30% placeholder='Enter your code for this question here'></textarea>
+					<br><br>
+					Filename: <input type="text" id="q2_file_name" placeholder="Enter the file's name with which it should be compiled and run" title="Enter the file's name with which it should be compiled and run">
+					<br> -->
+					<input id="q2_file" type="file" name="q2_file" style="width: 30%"/> <br>
+					<h6 id="error_msg"></h6>
+					<button id="q2_upload"><b>Upload</b></button>
+					<br><br>
+				</td>
+
+				<td class="tg-t_ldr" id="leader_board">
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>

@@ -1,0 +1,216 @@
+<!doctype html>
+
+<head>
+	<style type="text/css">
+		h1 {
+			text-align: center
+		}
+		h6 {
+			text-align: center;
+			color: #cc0000;
+			font-size:16px;
+		}
+		body {
+			font-family: "Candara", Verdana, "Arial Black"; 
+			font-size: 20px; 
+			background-color: #81A4CD;
+			padding-left: 40px; 
+			padding-right: 20px; 
+			padding-top: 20px; 
+			padding-bottom: 90px
+		}
+		button { 
+			font-family: "Candara", Verdana, "Arial Black"; 
+			font-size: 24px; 
+			background-color: lightgreen;
+			/*background-color: #6bf178;*/
+			align: center
+		}
+		p {
+			font-family: "Candara", Verdana, "Arial Black"; 
+			font-size: 19px; 
+			text-align: left;
+			margin: 30px;
+		}
+		li {
+			text-align: left;
+			margin-left: 60px;
+		}
+		input {
+			font-family: "Candara", Verdana, "Arial Black"; 
+			font-size: 20px;
+			width: 550px;
+		}
+		.tg {
+			border-collapse:collapse;
+			border-spacing:0;
+			border-color:#999;
+			table-layout: fixed;
+			width: 100%;
+		}
+
+		.tg td {
+			font-family:"Candara", Verdana, "Arial Black"; 
+			font-size:16px;
+			padding:10px 5px;
+			border-top-width:1px;
+			border-right-width:2px;
+			border-left-width: 0px;
+			border-bottom-width: 0px;
+			border-style:solid;
+			background-color:#F7FDFA;
+			border-color:#999;
+			overflow:hidden;
+			word-break:normal;
+			color:#444;
+		}
+
+		.tg .tg-t_ldr {
+			font-family:"Candara", Verdana, "Arial Black";
+			text-align:center;
+			color: #cc0000;
+			font-size:20px;
+			padding:10px 5px;
+			border-right-width: 0px;
+			border-style:solid;
+			background-color:#F7FDFA;
+			border-color:#999;
+			overflow:hidden;
+			word-break:normal;
+			vertical-align: top;
+		}
+
+		.tg th{
+			font-family:"Candara", Verdana, "Arial Black"; 
+			font-size:16px; 
+			font-weight:normal;
+			padding:10px 5px;
+			border-width:0px; 
+			border-style:solid; 
+			border-color:#999;
+			border-top-width:1px; 
+			border-bottom-width:1px;
+			overflow:hidden; 
+			word-break:normal;
+			color:#fff; 
+			background-color:#054A91;
+		}
+
+		.tg .tg-t_qst{
+			font-family:"Candara", Verdana, "Arial Black";
+			font-size:18px;
+			text-align:center; 
+			vertical-align:center;
+		}
+
+		.tg .tg-left{
+			text-align:left; 
+			vertical-align:center;
+		}
+	</style>
+	<!-- <link rel="stylesheet" href="/css/questions_style.css" media="screen"> -->
+</head>
+
+<body>
+	<h1>S E M ; C O L O N</h1>
+
+	<div style="text-align:center">
+		<h6 id="server_says"></h6>
+		<button id="back"><b>Back to Main Menu</b></button>
+	</div>
+
+	<br><br><br>
+
+	<div style="text-align:center">
+		<table class="tg" align="center">
+			<col width="70%">
+			<col width="30%">
+
+			<tr>
+				<th class="tg-t_qst"> <b>PROBLEM STATEMENT</b></th>
+				<th class="tg-t_qst"> <b>LEADERBOARD</b></th>
+			</tr>
+
+			<tr>
+				<td class="tg-t_qst">
+					<p>
+						The urban legend goes that if you go to the Google homepage and search for "Google", the universe will implode. We have a secret to share... It is true! Please don't try it, or tell anyone. All right, maybe not. We are just kidding.
+					</p><p>
+						The same is not true for a universe far far away. In that universe, if you search on any search engine for that search engine's name, the universe does implode!
+					</p><p>
+						To combat this, people came up with an interesting solution. All queries are pooled together. They are passed to a central system that decides which query goes to which search engine. The central system sends a series of queries to one search engine, and can switch to another at any time. Queries must be processed in the order they're received. The central system must never send a query to a search engine whose name matches the query. In order to reduce costs, the number of switches should be minimized.
+					</p><p>
+						Your task is to tell us how many times the central system will have to switch between search engines, assuming that we program it optimally.
+					</p><p>
+						<b>Input:</b> You will read only one file named: <b>"q3.in"</b>. You should assume that this file is in the same directory as your code for this question. The format for the file is as follows:
+
+						<li> The first line of the input file contains the number of cases, <b>N</b>. <b>N</b> test cases follow. </li>	
+
+						<li> Each case starts with the number <b>S</b> -- the number of search engines. The next <b>S</b> lines each contain the name of a search engine. Each search engine name is no more than one hundred characters long and contains only uppercase letters, lowercase letters, spaces, and numbers. There will not be two search engines with the same name. </li>	
+
+						<li> The following line contains a number <b>Q</b>; the number of incoming queries. The next <b>Q</b> lines will each contain a query. Each query will be the name of a search engine in the case. </li>				
+					</p><p>
+						<b>Output:</b> For each input case, you should output the number of search engine switches. Do not count the initial choice of a search engine as a switch.
+					</p><p>
+						<b>Constraints:</b> 
+						<li> 0 ≤ <b>N</b> ≤ 20 </li>
+						<li> 2 ≤ <b>S</b> ≤ 100 </li>
+						<li> 0 ≤ <b>Q</b> ≤ 1000 </li>
+					</p><p>
+						<b>Sample Input:</b> <br>
+						2<br>
+						5<br>
+						Yeehaw<br>
+						NSM<br>
+						Dont Ask<br>
+						B9<br>
+						Googol<br>
+						10<br>
+						Yeehaw<br>
+						Yeehaw<br>
+						Googol<br>
+						B9<br>
+						Googol<br>
+						NSM<br>
+						B9<br>
+						NSM<br>
+						Dont Ask<br>
+						Googol<br>
+						5<br>
+						Yeehaw<br>
+						NSM<br>
+						Dont Ask<br>
+						B9<br>
+						Googol<br>
+						7<br>
+						Googol<br>
+						Dont Ask<br>
+						NSM<br>
+						NSM<br>
+						Yeehaw<br>
+						Yeehaw<br>
+						Googol<br>
+					</p><p>
+						<b>Sample Output:</b> <br>
+						1<br>
+						0<br>
+					</p>
+
+					<br><br><br><br><br>
+					<h2>Submit your code</h2>
+					<!-- <textarea style="align: center" id='q2_code' cols=100% rows=30% placeholder='Enter your code for this question here'></textarea>
+					<br><br>
+					Filename: <input type="text" id="q2_file_name" placeholder="Enter the file's name with which it should be compiled and run" title="Enter the file's name with which it should be compiled and run">
+					<br> -->
+					<input id="q3_file" type="file" name="q3_file" style="width: 30%"/> <br>
+					<h6 id="error_msg"></h6>
+					<button id="q3_upload"><b>Upload</b></button>
+					<br><br>
+				</td>
+
+				<td class="tg-t_ldr" id="leader_board">
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>

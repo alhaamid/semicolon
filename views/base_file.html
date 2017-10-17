@@ -1,0 +1,193 @@
+<!doctype html>
+
+<head>
+	<style type="text/css">
+		h1 {
+			text-align: center
+		}
+		h6 {
+			text-align: center;
+			color: #cc0000;
+			font-size:16px;
+		}
+		body {
+			font-family: "Candara", Verdana, "Arial Black"; 
+			font-size: 20px; 
+			background-color: #81A4CD;
+			padding-left: 40px; 
+			padding-right: 20px; 
+			padding-top: 20px; 
+			padding-bottom: 90px
+		}
+		button { 
+			font-family: "Candara", Verdana, "Arial Black"; 
+			font-size: 24px; 
+			background-color: #6bf178; 
+			align: center
+		}
+		p {
+			font-family: "Candara", Verdana, "Arial Black"; 
+			font-size: 19px; 
+			text-align: left;
+			margin: 30px;
+		}
+		li {
+			text-align: left;
+			margin-left: 60px;
+		}
+		input {
+			font-family: "Candara", Verdana, "Arial Black"; 
+			font-size: 20px;
+			width: 550px;
+		}
+		.tg {
+			border-collapse:collapse;
+			border-spacing:0;
+			border-color:#999;
+			table-layout: fixed;
+			width: 100%;
+		}
+
+		.tg td {
+			font-family:"Candara", Verdana, "Arial Black"; 
+			font-size:16px;
+			padding:10px 5px;
+			border-top-width:1px;
+			border-right-width:2px;
+			border-left-width: 0px;
+			border-bottom-width: 0px;
+			border-style:solid;
+			background-color:#F7FDFA;
+			border-color:#999;
+			overflow:hidden;
+			word-break:normal;
+			color:#444;
+		}
+
+		.tg .tg-t_ldr {
+			font-family:"Candara", Verdana, "Arial Black";
+			text-align:center;
+			color: #cc0000;
+			font-size:20px;
+			padding:10px 5px;
+			border-right-width: 0px;
+			border-style:solid;
+			background-color:#F7FDFA;
+			border-color:#999;
+			overflow:hidden;
+			word-break:normal;
+			vertical-align: top;
+		}
+
+		.tg th{
+			font-family:"Candara", Verdana, "Arial Black"; 
+			font-size:16px; 
+			font-weight:normal;
+			padding:10px 5px;
+			border-width:0px; 
+			border-style:solid; 
+			border-color:#999;
+			border-top-width:1px; 
+			border-bottom-width:1px;
+			overflow:hidden; 
+			word-break:normal;
+			color:#fff; 
+			background-color:#054A91;
+		}
+
+		.tg .tg-t_qst{
+			font-family:"Candara", Verdana, "Arial Black";
+			font-size:18px;
+			text-align:center; 
+			vertical-align:center;
+		}
+
+		.tg .tg-left{
+			text-align:left; 
+			vertical-align:center;
+		}
+	</style>
+	<!-- <link rel="stylesheet" href="/css/questions_style.css" media="screen"> -->
+</head>
+
+<body>
+	<h1>S E M ; C O L O N</h1>
+
+	<div style="text-align:center">
+		<h6 id="server_says"></h6>
+		<button id="back"><b>Back to Main Menu</b></button>
+	</div>
+
+	<br><br><br>
+
+	<div style="text-align:center">
+		<table class="tg" align="center">
+			<col width="70%">
+			<col width="30%">
+
+			<tr>
+				<th class="tg-t_qst"> <b>PROBLEM STATEMENT</b></th>
+				<th class="tg-t_qst"> <b>LEADERBOARD</b></th>
+			</tr>
+
+			<tr>
+				<td class="tg-t_qst">
+					<!-- question's formatting goes here -->
+					<p>
+
+					</p><p>
+						
+					</p><p>
+						
+					</p><p>
+						
+					</p><p>
+						<b>Input:</b> You will read only one file named: <b>"q#.in"</b>. The format for the file is as follows:
+						<li>  </li>
+						<li>  </li>
+					</p><p>
+						<b>Output:</b> You need to display ...
+					</p><p>
+						<b>Constraints:</b> 
+						<li>  </li>
+						<li>  </li>
+					</p><p>
+						<b>Examples:</b> <br>
+						<ol>
+							<li>
+								<b>Input:</b> <br>
+								<b>Output:</b> <br>
+							</li>
+							<li>
+								<b>Input:</b> <br>
+								<b>Output:</b> <br>
+							</li>
+							<li>
+								<b>Input:</b> <br>
+								<b>Output:</b> <br>
+							</li>
+							<li>
+								<b>Input:</b> <br>
+								<b>Output:</b> <br>
+							</li>
+						</ol>
+					</p>
+
+					<br><br><br><br><br>
+					<h2>Submit your code</h2>
+					<!-- <textarea style="align: center" id='q1_code' cols=100% rows=30% placeholder='Enter your code for this question here'></textarea>
+					<br><br>
+					Filename: <input type="text" id="q1_file_name" placeholder="Enter the file's name with which it should be compiled and run" title="Enter the file's name with which it should be compiled and run">
+					<br> -->
+					<input id="q#_file" type="file" name="q#_file" style="width: 30%"/> <br>
+					<h6 id="error_msg"></h6>
+					<button id="q#_upload"><b>Upload</b></button>
+					<br><br>
+				</td>
+
+				<td class="tg-t_ldr" id="leader_board">
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>

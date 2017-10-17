@@ -1,0 +1,56 @@
+<head>
+	<style type="text/css">
+		h1 {
+			text-align: center
+		}
+		h6 {
+			text-align: center;
+			color: #cc0000;
+			font-size:16px;
+		}
+		body {
+			font-family: "Candara", Verdana, "Arial Black"; 
+			font-size: 20px; 
+			/*background-image: url("/images/smiley.png");*/
+			background-color: #81A4CD;
+		}
+		input {
+			font-family: "Candara", Verdana, "Arial Black"; 
+			font-size: 20px
+		}
+		button { 
+			font-family: "Candara", Verdana, "Arial Black"; 
+			font-size: 25px; 
+			background-color: lightgreen; 
+			align: center
+		}
+	</style>
+
+	<title>Login();</title>
+
+	<script type = "text/javascript"
+		src="/javascript/jquery.js"></script>
+
+	<script type = "text/javascript"
+		src="/javascript/socket.io.js"></script>
+
+	<script src="/javascript/client.js"></script>
+
+	<!-- <link rel="stylesheet" type="text/css" href="/css/login_style.css"> -->
+</head>
+
+<body>
+	<h1>Signin - S E M ; C O L O N</h1>
+	<h6 id="server_says"></h6>
+	
+	<div style="text-align:center">
+		<label>Enter your group's nickname here: </label>
+		<input type="text" id="user_name" placeholder="e.g. SayNoToCorruption">
+		<br>
+		<label>Enter the password you submitted when registring: </label>
+		<input type="password" id="password" >
+		<br><br>
+
+		<button id="login"><b>Login</b></button>
+	</div>
+</body>
