@@ -17,7 +17,7 @@ rl = readline.createInterface({
 
 // Globals
 PORT = 3000
-PORT = process.env.PORT || 3000;
+// PORT = process.env.PORT || 3000; // this line added so port binds to heroku's port
 
 app = express()
 static_dir = 'public'
