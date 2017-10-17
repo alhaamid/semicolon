@@ -1,5 +1,3 @@
-/*10.101.96.24*/
-
 express = require('express')
 bodyParser = require('body-parser')
 path = require('path')
