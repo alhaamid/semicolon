@@ -563,8 +563,9 @@ function setup_user_dirs (user_name_) {
 }
 
 function get_proper_time(user_name_, q_num_, str) {
-	return (new Date(progresses[user_name_]['q'+q_num_.toString()+str]*1000)).toTimeString().replace("GMT+0500 ", '')
+	return (new Date(progresses[user_name_]['q'+q_num_.toString()+str]*1000)).toTimeString().replace("GMT+0000 ", '')
 }
+
 
 function make_hashmap(user_name_) {
 	// var progress = progresses[user_name_]
