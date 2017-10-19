@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <head>
 	<style type="text/css">
 		h1 {
@@ -10,7 +12,7 @@
 		body {
 			font-family: "Candara", Verdana, "Arial Black"; 
 			font-size: 20px; 
-			background-color: #81A4CD;
+			background-color: #AFD2E9;
 			padding-left: 180px; 
 			padding-right: 180px; 
 			padding-top: 20px; 
@@ -23,6 +25,29 @@
 			/*background-color: skyblue;*/
 			align: center; 
 			width: 60%;
+		}
+		div.heading {
+			/*background-color: #81A4CD;*/
+			background-color: #314CB6;
+			padding-bottom: 10px;
+			width: 100%;
+			/*height: 400px;*/
+			text-align: center;
+			/*vertical-align: center;*/
+			margin-left: auto;
+			margin-right: auto;
+		}
+		div.rest {
+			/*background-color: #DDCAD9;*/
+			background-color: #AFD2E9;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			width: 100%;
+			/*height: 400px;*/
+			text-align: center;
+			vertical-align: center;
+			margin-left: auto;
+			margin-right: auto;
 		}
 		.tg {
 			border-collapse:collapse;
@@ -69,11 +94,14 @@
 </head>
 
 <body>
-	<h1>S E M ; C O L O N</h1>
-	<h2 id="name" align="center"></h2>
-	<h6 id="server_says"></h6>
+	<div class="heading">
+		<h1>Main Menu - SEM;COLON</h1>
+	</div>
 
-	<div style="text-align:center">
+	<div class="rest" style="text-align:center">
+		<h2 id="name" align="center"></h2>
+		<h6 id="server_says"></h6>
+
 		<h3 id="instructions" align="center">Instructions:<br> </h3>
 		<div style="display: inline-block; text-align: left">
 			
@@ -97,29 +125,30 @@
 
 			<li> For Python, only version <b>2.7.12</b> is supported. Your code for Python will be checked with the following commad: <b>python &#60yourfile.py&#62</b> </li>
 		</div>
-	</div>
 
-	<br><br>
-
-	<div style="text-align:center">
-		<table class="tg" align="center">
-			<col width="20%">
-			<col width="60%">
-			<col width="20%">
-			<tr>
-				<th class="tg-mid">Question #</th>
-				<th class="tg-mid">Status</th>
-				<th class="tg-mid">Go</th>
-			</tr>
-			<% for (i=1; i<=4; i++) { %>
-				<tr>
-					<td class="tg-mid">Question <%=i%></td>
-					<td class="tg-mid" id="q<%=i%>_status">Haven't started yet</td>
-					<td class="tg-mid"><button id="q<%=i%>_go_to"><b>Open Question</b></button> </td>
-
-				</tr>
-			<%}%>
-		</table>
 		<br><br>
+
+		<div style="text-align:center">
+			<table class="tg" align="center">
+				<col width="20%">
+				<col width="60%">
+				<col width="20%">
+				<tr>
+					<th class="tg-mid">Question #</th>
+					<th class="tg-mid">Status</th>
+					<th class="tg-mid">Go</th>
+				</tr>
+				<% for (i=1; i<=4; i++) { %>
+					<tr>
+						<td class="tg-mid">Question <%=i%></td>
+						<td class="tg-mid" id="q<%=i%>_status">Haven't started yet</td>
+						<td class="tg-mid"><button id="q<%=i%>_go_to"><b>Open Question</b></button> </td>
+
+					</tr>
+				<%}%>
+			</table>
+			<br><br>
+		</div>
 	</div>
 </body>
+</html>

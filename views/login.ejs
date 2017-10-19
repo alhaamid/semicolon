@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <head>
 	<style type="text/css">
 		h1 {
@@ -11,8 +13,12 @@
 		body {
 			font-family: "Candara", Verdana, "Arial Black"; 
 			font-size: 20px; 
-			/*background-image: url("/images/smiley.png");*/
-			background-color: #81A4CD;
+			background-color: #AFD2E9;
+			padding-left: 180px; 
+			padding-right: 180px; 
+			padding-top: 20px; 
+			padding-bottom: 90px;
+			/*background-color: #DDCAD9*/
 		}
 		input {
 			font-family: "Candara", Verdana, "Arial Black"; 
@@ -23,6 +29,30 @@
 			font-size: 25px; 
 			background-color: lightgreen; 
 			align: center
+		}
+		div.heading {
+			/*background-color: #81A4CD;*/
+			background-color: #314CB6;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			width: 100%;
+			/*height: 400px;*/
+			text-align: center;
+			/*vertical-align: center;*/
+			margin-left: auto;
+			margin-right: auto;
+		}
+		div.rest {
+			/*background-color: #DDCAD9;*/
+			background-color: #AFD2E9;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			vertical-align: center;
+			margin-left: auto;
+			margin-right: auto;
 		}
 	</style>
 
@@ -39,18 +69,31 @@
 	<!-- <link rel="stylesheet" type="text/css" href="/css/login_style.css"> -->
 </head>
 
-<body>
-	<h1>Signin - S E M ; C O L O N</h1>
-	<h6 id="server_says"></h6>
-	
-	<div style="text-align:center">
-		<label>Enter your group's nickname here: </label>
-		<input type="text" id="user_name" placeholder="e.g. SayNoToCorruption">
-		<br>
-		<label>Enter the password you submitted when registring: </label>
-		<input type="password" id="password" >
-		<br><br>
+<body>	
+	<div class="heading">
+		<h1>Login - SEM;COLON</h1>
+		<h6 id="server_says"></h6>
+	</div>
 
+	<div class="rest">
+		<br>
+		<table align="center" style="text-align: right;">
+			<tr>
+				<td>
+					<label>Enter your group's nickname here: </label>
+				</td><td>
+					<input type="text" id="user_name" placeholder="e.g. SayNoToCorruption">
+				</td>
+			</tr><tr>
+				<td>
+					<label>Enter the password you submitted when registring: </label>
+				</td><td>
+					<input type="password" id="password" >
+				</td>
+			</tr>
+		</table>
+		<br>
 		<button id="login"><b>Login</b></button>
 	</div>
 </body>
+</html>
